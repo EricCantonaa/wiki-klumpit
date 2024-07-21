@@ -1,0 +1,120 @@
+body {
+    font-family: garamond;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: lightgray;
+}
+
+header, nav, footer {
+    background: rgb(255, 128, 0);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: gray;
+    margin: 5px;
+    border-radius: 5px;
+    display: block; /* Membuat link mengambil seluruh lebar di layar kecil */
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    margin: 1em 4em;
+    line-height: 1.6; /* Pastikan nilai line-height sebagai desimal untuk CSS */
+    text-align: center;
+}
+
+/* CONTAINER 1 */
+.container, .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container img, .container2 img {
+    width: 400px; /* Atur lebar gambar */
+    height: auto; /* Atur tinggi gambar agar proporsional dengan lebarnya */
+    border-radius: 10px;
+}
+
+.container img {
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+}
+
+.container2 {
+    flex-direction: row-reverse; /* Atur arah flex untuk container2 */
+}
+
+.container2 img {
+    margin-left: 20px; /* Ubah menjadi margin-left untuk jarak antara gambar dan teks */
+}
+
+.container p, .container2 p {
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    nav {
+        flex-direction: column; /* Mengatur navigasi menjadi kolom di layar kecil */
+    }
+    nav a {
+        width: 100%; /* Buat link navigasi menempati lebar penuh */
+        margin: 5px 0; /* Spasi antar link */
+    }
+    .container, .container2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .container img, .container2 img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px 0;
+    }
+    .container p, .container2 p {
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    nav a {
+        padding: 10px 0; /* Tambahkan padding vertikal */
+    }
+    .container, .container2 {
+        padding: 10px;
+        margin: 10px 0;
+    }
+}

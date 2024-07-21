@@ -1,0 +1,89 @@
+body {
+    font-family: garamond;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: lightgray;
+}
+
+header, nav, footer {
+    background: rgb(150, 30, 20);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    background-color: gray;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 0,5em;
+    margin-bottom: 3em;
+    margin-left: 4em;
+    margin-right: 4em;
+    line-height: 0,5;   
+    text-align: center;
+}
+
+
+
+/*CONTAINER 1*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.container img {
+    width: 150px;      /* Atur lebar gambar */
+    height: auto;      /* Atur tinggi gambar agar proporsional dengan lebarnya */
+    margin-right: 20px; /* Jarak antara gambar dan teks */
+    border-radius: 10px;
+}
+
+.container p {
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/*CONTAINER 2*/
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex-direction: row-reverse; /* Tambahkan baris ini */
+}
+
+.container2 img {
+    width: 150px;      /* Atur lebar gambar */
+    height: auto;      /* Atur tinggi gambar agar proporsional dengan lebarnya */
+    margin-left: 20px; /* Ubah menjadi margin-left untuk jarak antara gambar dan teks */
+    border-radius: 10px;
+}
+
+.container2 p {
+    margin: 0;
+    line-height: 1.5;
+    text-align: left;
+}
